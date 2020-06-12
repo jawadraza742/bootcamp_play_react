@@ -34,7 +34,7 @@ jobs:
       run: yarn build
       
     - name: Install Surge
-      run: npm instal --global surge
+      run: npm install --global surge
       
     - name: Setup Development on Surge
       run: surge ./build playwithreactinbootcamp2020.surge.sh --token ${{ secrets.SURGE_TOKEN }}   
